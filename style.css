@@ -1,0 +1,666 @@
+body {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    padding: 0 0 1em 0;
+    background-image: url('./img/backgroundeMine.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    cursor: url('./img/curs.png')16 16, auto;
+}
+
+@font-face {
+    font-family: Mine;
+    src: url(./fonts/F77\ Minecraft.ttf);
+}
+
+.b-page__content {
+    min-height: 200px
+}
+
+.b-head-decor {
+    display: none
+}
+
+.b-page_newyear .b-head-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 115px;
+    width: 100%;
+    overflow: hidden;
+    background: url(balls/b-head-decor_newyear.png) repeat-x 0 0
+}
+
+.b-page_newyear .b-head-decor__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 115px;
+    display: block;
+    width: 373px
+}
+
+.b-page_newyear .b-head-decor::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -115px;
+    left: 0;
+    z-index: 3;
+    height: 115px;
+    display: block;
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.75)
+}
+
+.b-page_newyear .b-head-decor__inner_n2 {
+    left: 373px
+}
+
+.b-page_newyear .b-head-decor__inner_n3 {
+    left: 746px
+}
+
+.b-page_newyear .b-head-decor__inner_n4 {
+    left: 1119px
+}
+
+.b-page_newyear .b-head-decor__inner_n5 {
+    left: 1492px
+}
+
+.b-page_newyear .b-head-decor__inner_n6 {
+    left: 1865px
+}
+
+.b-page_newyear .b-head-decor__inner_n7 {
+    left: 2238px
+}
+
+.b-ball {
+    position: absolute
+}
+
+.b-ball_n1 {
+    top: 0;
+    left: 3px;
+    width: 59px;
+    height: 83px
+}
+
+.b-ball_n2 {
+    top: -19px;
+    left: 51px;
+    width: 55px;
+    height: 70px
+}
+
+.b-ball_n3 {
+    top: 9px;
+    left: 88px;
+    width: 49px;
+    height: 67px
+}
+
+.b-ball_n4 {
+    top: 0;
+    left: 133px;
+    width: 57px;
+    height: 102px
+}
+
+.b-ball_n5 {
+    top: 0;
+    left: 166px;
+    width: 49px;
+    height: 57px
+}
+
+.b-ball_n6 {
+    top: 6px;
+    left: 200px;
+    width: 54px;
+    height: 70px
+}
+
+.b-ball_n7 {
+    top: 0;
+    left: 240px;
+    width: 56px;
+    height: 67px
+}
+
+.b-ball_n8 {
+    top: 0;
+    left: 283px;
+    width: 54px;
+    height: 53px
+}
+
+.b-ball_n9 {
+    top: 10px;
+    left: 321px;
+    width: 49px;
+    height: 66px
+}
+
+.b-ball_n1 .b-ball__i {
+    background: url(balls/b-ball_n1.png) no-repeat
+}
+
+.b-ball_n2 .b-ball__i {
+    background: url(balls/b-ball_n2.png) no-repeat
+}
+
+.b-ball_n3 .b-ball__i {
+    background: url(balls/b-ball_n3.png) no-repeat
+}
+
+.b-ball_n4 .b-ball__i {
+    background: url(balls/b-ball_n4.png) no-repeat
+}
+
+.b-ball_n5 .b-ball__i {
+    background: url(balls/b-ball_n5.png) no-repeat
+}
+
+.b-ball_n6 .b-ball__i {
+    background: url(balls/b-ball_n6.png) no-repeat
+}
+
+.b-ball_n7 .b-ball__i {
+    background: url(balls/b-ball_n7.png) no-repeat
+}
+
+.b-ball_n8 .b-ball__i {
+    background: url(balls/b-ball_n8.png) no-repeat
+}
+
+.b-ball_n9 .b-ball__i {
+    background: url(balls/b-ball_n9.png) no-repeat
+}
+
+.b-ball_i1 .b-ball__i {
+    background: url(balls/b-ball_i1.png) no-repeat
+}
+
+.b-ball_i2 .b-ball__i {
+    background: url(balls/b-ball_i2.png) no-repeat
+}
+
+.b-ball_i3 .b-ball__i {
+    background: url(balls/b-ball_i3.png) no-repeat
+}
+
+.b-ball_i4 .b-ball__i {
+    background: url(balls/b-ball_i4.png) no-repeat
+}
+
+.b-ball_i5 .b-ball__i {
+    background: url(balls/b-ball_i5.png) no-repeat
+}
+
+.b-ball_i6 .b-ball__i {
+    background: url(balls/b-ball_i6.png) no-repeat
+}
+
+.b-ball_i1 {
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 71px
+}
+
+.b-ball_i2 {
+    top: 0;
+    left: 25px;
+    width: 61px;
+    height: 27px
+}
+
+.b-ball_i3 {
+    top: 0;
+    left: 176px;
+    width: 29px;
+    height: 31px
+}
+
+.b-ball_i4 {
+    top: 0;
+    left: 205px;
+    width: 50px;
+    height: 51px
+}
+
+.b-ball_i5 {
+    top: 0;
+    left: 289px;
+    width: 78px;
+    height: 28px
+}
+
+.b-ball_i6 {
+    top: 0;
+    left: 367px;
+    width: 6px;
+    height: 69px
+}
+
+.b-ball__i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    pointer-events: none
+}
+
+.b-ball_bounce .b-ball__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    z-index: 9
+}
+
+.b-ball_bounce:hover .b-ball__right {
+    display: none
+}
+
+.b-ball_bounce .b-ball__right:hover {
+    left: 0;
+    display: block !important
+}
+
+.b-ball_bounce.bounce>.b-ball__i {
+    -webkit-transform: rotate(-9deg);
+    -moz-transform: rotate(-9deg);
+    -o-transform: rotate(-9deg);
+    transform: rotate(-9deg)
+}
+
+.b-ball_bounce .b-ball__right.bounce+.b-ball__i {
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    transform: rotate(9deg)
+}
+
+.b-ball_bounce.bounce1>.b-ball__i {
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    transform: rotate(6deg)
+}
+
+.b-ball_bounce .b-ball__right.bounce1+.b-ball__i {
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    transform: rotate(-6deg)
+}
+
+.b-ball_bounce.bounce2>.b-ball__i {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg)
+}
+
+.b-ball_bounce .b-ball__right.bounce2+.b-ball__i {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg)
+}
+
+.b-ball_bounce.bounce3>.b-ball__i {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg)
+}
+
+.b-ball_bounce .b-ball__right.bounce3+.b-ball__i {
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg)
+}
+.snowblock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -200;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/snowf.png);
+    animation: snow 7s linear infinite;
+    opacity: 0.7;
+    filter: blur(1px);
+}
+
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: -1800px 1600px, -1600px 1600px, -1400px 1200px;
+    }
+}
+
+h3{
+    font-family: Mine;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+/* Полностью убираем снег */
+
+.snow-hidden {
+    display: none;
+}
+.snow-toggle{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 100px;
+    opacity: 0.5;
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 100px;
+    z-index: 2000;
+}
+
+.countdown h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-family: Mine;
+    color: white;
+}
+.countdown h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-family: Mine;
+    color: white;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: Mine;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.timer2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: Mine;
+    color: white;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    padding: 20px 25px;
+    min-width: 110px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.time-box span {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.time-box small {
+    font-size: 14px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+/* .snowman{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+} */
+
+/* .santa {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */
+
+/* Подарки *//* Подарки *//* Подарки */
+
+.scene {
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 10000;
+}
+
+.chest-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.chest {
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    right: 0;
+}
+
+/* Подарки */
+.giftchest {
+    position: absolute;
+    width: 70px;
+    bottom: 50px;
+    right: 60px;
+    opacity: 0;
+    z-index: 1;
+    transition: transform 0.8s ease, opacity 0.3s;
+}
+
+/* Финальные позиции */
+.open .giftchest {
+    opacity: 1;
+}
+
+.open .giftchest1 {
+    transform: translate(-80px, -120px) rotate(-20deg);
+    z-index: 1000;
+}
+
+.open .giftchest2 {
+    transform: translate(0, -150px) rotate(10deg);
+    z-index: 1000;
+}
+
+.open .giftchest3 {
+    transform: translate(80px, -110px) rotate(25deg);
+    z-index: 1000;
+}
+
+
+
+
+.game-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: Mine;
+  margin-top: 200px;
+}
+
+.game-container {
+  width: 800px;
+  height: 600px;
+  background-image: url(./img/backgame.png);
+  border: 5px solid #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(0, 225, 255) 0px 0px 10px 5px;
+}
+
+.game-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 20px;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fff;
+}
+
+.game-field {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.player {
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background-color: #922e2e; /* сундук */
+  background-size: cover;
+  z-index: 3;
+}
+
+.gift {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -60px;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.game-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.game-controls button {
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: Mine;
+}
+
+
+/* Кнопка с эффектом */
+.magic-btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  background-size: 200% 200%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Модальное окно */
+.modal {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  
+}
+
+.magic-btn{
+    font-family: Mine;
+    
+}
+
+.modal-content {
+  background-color: #64bfe9;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  font-family: Mine;
+}
+
+.modal-content textarea {
+  width: 95%;
+  height: 150px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: Mine;
+}
+
+.btnn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.modal-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: Mine;
+}
+
+/* Крестик закрытия */
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
